@@ -1,0 +1,15 @@
+[package]
+name = "authlite"
+version = "0.1.0"
+authors = ["Dan <dan@d2718.net>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+blake3          = "^1.0"
+csv             = "^1.1"
+humantime-serde = "^1.0"
+rand            = "^0.8"
+serde           = { version = "^1.0.55", features = ["derive"] }
+serial_test     = "*"
