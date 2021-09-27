@@ -16,6 +16,7 @@ use crate::{KeyAuth, PwdAuth, FileError, DataError};
     password need not be remembered or typed, transmitted, or checked
     over and over again.
 */
+#[derive(Debug)]
 pub struct BothAuth {
     pwdauth: PwdAuth,
     keyauth: KeyAuth,

@@ -17,6 +17,7 @@ const PWD_FILE_HEADERS: [&str; 2] = ["uname", "hash"];
     instead, the database will be internally flagged as "dirty" (that is,
     out of sync with the data on disk) until it is explicitly written.
 */
+#[derive(Debug)]
 pub struct PwdAuth {
     hashes: RwLock<HashMap<String, Hash>>,
     ufile:  PathBuf,

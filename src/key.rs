@@ -58,6 +58,7 @@ impl KeyMeta {
     (that is, out of sync with the data on disk) until it is explicitly
     written.
 */
+#[derive(Debug)]
 pub struct KeyAuth {
     keys:   RwLock<HashMap<String, KeyMeta>>,
     kfile:  PathBuf,
